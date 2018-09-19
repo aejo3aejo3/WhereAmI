@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aaronlife.whereami.MainActivity">
+
+   <WebView android:id="@+id/webview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></WebView>
+
+
+   <TextView android:id="@+id/info"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       android:text="Provider: \nPosition:"
+       android:textColor="#ff00ff"
+       android:shadowDx="3"
+       android:shadowDy="3"
+       android:shadowColor="#000000"
+       android:shadowRadius="3"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="20dp"
+        android:src="@mipmap/target"
+        android:onClick="getMe"/>
+
+</FrameLayout>
